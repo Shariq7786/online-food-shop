@@ -1,0 +1,53 @@
+.app-download {
+    margin: 100px auto;
+    font-size: max(1.5rem, 20px);
+    text-align: center;
+    font-weight: 600;
+    background-color: #f8f8f8; /* Light background for emphasis */
+    padding: 50px 20px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.app-download p {
+    font-size: max(2.5vw, 22px);
+    font-weight: 700;
+    color: #333333;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.app-download span {
+    color: #ff6347; /* Tomato theme color */
+}
+
+.app-download-platforms {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.app-download-platforms img {
+    width: max(20vw, 120px);
+    max-width: 160px; /* Keeps icons consistent */
+    border-radius: 12px; /* Slightly rounded corners for modern look */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth hover effect */
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Slight shadow on icons */
+}
+
+.app-download-platforms img:hover {
+    transform: scale(1.1); /* Slight zoom on hover */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Emphasized hover shadow */
+}
+
+@media (max-width: 768px) {
+    .app-download p {
+        font-size: 1.2rem;
+    }
+    .app-download-platforms img {
+        width: max(25vw, 100px);
+        max-width: 140px; /* Smaller icons for mobile screens */
+    }
+}
